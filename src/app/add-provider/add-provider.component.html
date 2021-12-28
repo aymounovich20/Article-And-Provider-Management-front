@@ -1,0 +1,22 @@
+<div class="row mt-5">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <form #myform="ngForm" (ngSubmit)="createProvider(myform)">
+            <div class="form-group">
+                <label for="providerName">Provider Name </label>
+        
+                <input ngModel name="providerName" size="20" type="text" class="form-control" id="providerName" />
+            </div>
+            <div class="form-group">
+                <label for="providerEmail">Provider Email </label>
+                <input ngModel name="providerEmail" size="20" type="text" class="form-control" id="providerEmail" />
+            </div>
+            <div class="form-group">
+                <label for="providerAdress">Provider Adresse </label>
+                <input ngModel name="providerAdress" size="20" type="text" class="form-control" id="providerAdress" />
+            </div>
+            <button class="btn btn-primary m-2">Ajouter</button>
+        </form>
+    </div>
+    <div class="col-2"></div>
+</div>
